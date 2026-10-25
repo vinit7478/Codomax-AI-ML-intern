@@ -1,0 +1,5 @@
+from ultralytics import YOLO
+
+model = YOLO('yolov8x.pt')
+
+result = model(source="image.png", show=True, conf=0.4, device="cpu", save=True)
